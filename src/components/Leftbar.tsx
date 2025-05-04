@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { data } from "../constants"
 import { Link } from "react-router-dom";
+import { IoMdClose } from "react-icons/io";
 
-const Leftbar = () => {
+const Leftbar = ({onClose}:{onClose?:()=>void}) => {
 
     const [isActive,setIsActive]=useState("Overview");
 
@@ -12,6 +13,13 @@ const Leftbar = () => {
   return (
     <div className="h-full w-full pt-8 border-l-[1px] border-l-orange flex flex-col gap-0">
         <div className="w-full h-[90%] flex flex-col justify-between">
+        {onClose && (
+        <div className="lg:hidden px-4 pb-4">
+          <button onClick={onClose} className="text-white">
+            <IoMdClose className="cursor-pointer" size={24} />
+          </button>
+        </div>
+      )}
         <div className="w-full flex flex-col gap-6">
             <div className="w-full pl-3">
             <h2 className="text-orange text-3xl font-semibold">Supa<span className="text-white">Menu</span></h2>
