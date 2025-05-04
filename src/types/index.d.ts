@@ -17,3 +17,7 @@ export interface RegistrationStepProps {
 export interface AuthLayoutProps{
     children: React.ReactNode
 }
+
+export interface RootLayoutProps{
+    children: React.ReactNode
+}

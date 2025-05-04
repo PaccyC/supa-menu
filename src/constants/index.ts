@@ -26,24 +26,52 @@ import person3 from '../assets/images/person3.png'
 const navbarLinks = [
     {
         id:1,
-        title:"Home",
-        route:"/"
+        title:"Overview",
+        route:"/overview",
+        icon: ""
     },
     {
         id:2,
-        title:"About",
-        route:"/about"
+        title:"Clients",
+        route:"/clients",
+        icon: ""
     },
     {
         id:3,
-        title:"Grooming",
-        route:"/grooming"
+        title:"Users",
+        route:"/users"
     },
     {
-        id:4,
-        title:"Services",
-        route:"/services"
-    }
+        id:5,
+        title:"Tables",
+        route:"/tables",
+        icon: ""
+    },
+    {
+        id:6,
+        title:"Orders",
+        route:"/orders",
+        icon: ""
+    },
+    {
+        id:7,
+        title:"Menus",
+        route:"/menu",
+        icon: ""
+    },
+    {
+        id:8,
+        title:"Settings",
+        route:"/settings",
+        icon: ""
+    },
+    {
+        id:9,
+        title:"My Account",
+        route:"/profile",
+        icon: ""
+    },
+
 ]
 
 
@@ -252,6 +280,30 @@ const registrationSteps= [
     }
 ]
 
+const clients=[
+    {
+        name:"Soy Restaurant",
+        sales:3283289239
+    },
+    {
+        name:"Choose Kigali",
+        sales:738293932
+    },
+    {
+        name:"Planet Burget",
+        sales:632872
+    },
+    {
+        name:"M Hotel",
+        sales:7329292
+    },
+    {
+        name:"Chez Lando",
+        sales:12332883
+    }
+]
+
+
 export const data={
     navbarLinks,
     icons,
@@ -261,5 +313,6 @@ export const data={
     services,
     petProducts,
     testimonials,
-    registrationSteps
+    registrationSteps,
+    clients
 }
