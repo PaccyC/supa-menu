@@ -7,7 +7,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <section className="w-full min-h-screen bg-black">
+    <section className="w-full min-h-screen bg-black md:px-4">
       {/* Top mobile bar */}
       <div className="lg:hidden flex items-center justify-between px-4 py-3 border-b border-gray-700 bg-black">
         <h1 className="text-white font-semibold text-xl">Supa<span className="text-orange">Menu</span></h1>
