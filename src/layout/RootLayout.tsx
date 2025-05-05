@@ -22,8 +22,6 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <Leftbar onClose={() => setIsSidebarOpen(false)} />
         </div>
-
-        
         <div className="hidden lg:flex w-[15%]">
           <Leftbar />
         </div>

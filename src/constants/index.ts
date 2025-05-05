@@ -304,6 +304,74 @@ const clients=[
 ]
 
 
+const clientTypes=[
+    {
+        id:1,
+        title:"Restaurants",
+        entities:[
+            {
+                id:1,
+                name: "Sole Luna",
+                sales:46000
+            },
+            {
+                id:2,
+                name: "Soy",
+                sales:12000
+            }
+        ]
+    },
+
+    {
+        id:2,
+        title:"Hotels",
+        entities:[
+            {
+                id:1,
+                name: "Park Inn",
+                sales:46000
+            },
+            {
+                id:2,
+                name: "M Hotel",
+                sales:12000
+            }
+        ]
+    },
+    {
+        id:3,
+        title:"Pubs",
+        entities:[
+            {
+                id:1,
+                name: "Sund Owner",
+                sales:46000
+            },
+            {
+                id:2,
+                name: "Gate N10",
+                sales:12000
+            }
+        ]
+    },
+    {
+        id:4,
+        title:"Cafes",
+        entities:[
+            {
+                id:1,
+                name: "Aroma",
+                sales:46000
+            },
+            {
+                id:2,
+                name: "Patissetie Royale",
+                sales:12000
+            }
+        ]
+    }
+]
+
 export const data={
     navbarLinks,
     icons,
@@ -314,5 +382,6 @@ export const data={
     petProducts,
     testimonials,
     registrationSteps,
-    clients
+    clients,
+    clientTypes
 }

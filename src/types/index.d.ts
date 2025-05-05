@@ -1,3 +1,4 @@
+import React from "react";
 
 
 export interface CustomButtonProps {
@@ -19,5 +20,10 @@ export interface AuthLayoutProps{
 }
 
 export interface RootLayoutProps{
+    children: React.ReactNode
+}
+
+export interface ClientTypeProps {
+    title:string;
     children: React.ReactNode
 }
